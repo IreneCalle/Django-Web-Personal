@@ -1,0 +1,27 @@
+{% extends 'core/base.html' %}
+{% block title %} Acerca de {% endblock %}
+
+
+{% block background  %} {% load static  %}{% static 'core/img/about-bg.jpg' %}{% endblock  %}
+
+
+{% block headers  %}
+ <h1>Acerca de </h1>
+<span class="subheading">Biografía</span>
+{% endblock  %}
+
+{% block content %} 
+<div class="row">   
+
+<div class="col-lg-3 col-md-4 offset-lg-1">
+    <img class="img-fluid avatar" src="{% static 'core\img\avatar.jpg' %}" alt="">
+  </div>
+  <div class="col-lg-7 col-md-8">
+    <h2 class="section-heading">Irene Callejas</h2>  
+    <p> Desarrollo de proyectos de software orientados a soluciones usables e intuitivas.  </p>
+ 
+    <p> Mi enfoque se centra en la creación de aplicaciones que no solo satisfacen las necesidades del cliente, sino que también ofrecen una experiencia de usuario excepcional. Utilizo metodologías ágiles para garantizar una entrega rápida y efectiva, adaptándome a los cambios y necesidades emergentes durante el ciclo de vida del proyecto.  </p>
+  </div>
+</div>
+{% endblock %}
+
